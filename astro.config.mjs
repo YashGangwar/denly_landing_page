@@ -4,7 +4,6 @@ import icon from 'astro-icon';
 
 const build = {
   baseURL: '/',
-  outDir: './dist',
   siteURL: 'http://localhost:4321/'
 }
 
@@ -12,13 +11,13 @@ const env = process.env.NODE_ENV
 
 switch (env) {
   case 'pages':
-    build.baseURL = '/astro-landing-page/'
-    build.outDir = './docs'
-    build.siteURL = 'https://ttntm.github.io/astro-landing-page/'
+    build.baseURL = '/denly-landing-page/'
+    build.siteURL = 'https://yashgangwar.github.io'
     break
 
   case 'production':
-    build.siteURL = 'https://example.com/'
+    build.baseURL = '/denly-landing-page/'
+    build.siteURL = 'https://yashgangwar.github.io'
     break
 
   default:
@@ -29,7 +28,6 @@ switch (env) {
 export default defineConfig({
   site: build.siteURL,
   base: build.baseURL,
-  outDir: build.outDir,
   integrations: [
     icon(),
     tailwind({

@@ -18,7 +18,7 @@ const { afterTitle, title } = Astro.props;
     <h2
       class="text-primary-yellowDark font-bold text-4xl text-center my-10 md:my-10"
     >
-      Choose your Denly Adventure!
+      {title}
     </h2>
   </div>
   <div
@@ -171,30 +171,34 @@ const { afterTitle, title } = Astro.props;
 <script>
   var section1 = document.getElementById("cover-left");
   var section2 = document.getElementById("cover-right");
-  document.getElementById("click-left").addEventListener("click", function () {
+  document.getElementById("click-left")?.addEventListener("click", function () {
     console.log("clicked");
-    if (section2.classList.contains("open")) {
+    if (section2?.classList.contains("open")) {
       section2.classList.remove("open");
 
       section2.classList.add("close");
     }
-    section1.classList.remove("close");
-    section1.classList.add("open");
+    section1?.classList.remove("close");
+    section1?.classList.add("open");
   });
-  document.getElementById("click-right").addEventListener("click", function () {
-    if (section1.classList.contains("open")) {
-      section1.classList.remove("open");
-      section1.classList.add("close");
-    }
-    section2.classList.remove("close");
-    section2.classList.add("open");
+  document
+    .getElementById("click-right")
+    ?.addEventListener("click", function () {
+      if (section1?.classList.contains("open")) {
+        section1.classList.remove("open");
+        section1.classList.add("close");
+      }
+      section2?.classList.remove("close");
+      section2?.classList.add("open");
+    });
+  document.getElementById("cover-left")?.addEventListener("click", function () {
+    section1?.classList.remove("open");
+    section1?.classList.add("close");
   });
-  document.getElementById("cover-left").addEventListener("click", function () {
-    section1.classList.remove("open");
-    section1.classList.add("close");
-  });
-  document.getElementById("cover-right").addEventListener("click", function () {
-    section2.classList.remove("open");
-    section2.classList.add("close");
-  });
+  document
+    .getElementById("cover-right")
+    ?.addEventListener("click", function () {
+      section2?.classList.remove("open");
+      section2?.classList.add("close");
+    });
 </script>
