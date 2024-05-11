@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config'
 import tailwind from '@astrojs/tailwind'
+import icon from 'astro-icon';
 
 const build = {
   baseURL: '/',
@@ -30,6 +31,7 @@ export default defineConfig({
   base: build.baseURL,
   outDir: build.outDir,
   integrations: [
+    icon(),
     tailwind({
       applyBaseStyles: false
     })

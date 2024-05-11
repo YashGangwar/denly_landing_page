@@ -29,12 +29,12 @@
 
   container.appendChild(document.importNode(template.content, true))
 
-  tippy('#follow', {
+  tippy('#facebook', {
     content: container.innerHTML,
     animation: 'scale',
     duration: 250,
-    arrow: true,
-    placement: 'bottom',
-    interactive: true
+    arrow: false,
+    placement: 'right',
+    interactive: true,
   })
 </script>

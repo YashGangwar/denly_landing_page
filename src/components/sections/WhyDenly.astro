@@ -1,0 +1,99 @@
+---
+import "../../styles/tailwind.css";
+import Stats from "../../data/stats.json";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  afterTitle?: string;
+  title: string;
+}
+
+const site = Astro.site;
+const { title, afterTitle } = Astro.props;
+---
+
+<!-- component -->
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+/>
+<div
+  id="why"
+  class="relative w-full flex flex-col justify-center bg-tertiary-dark"
+>
+  <div
+    class="relative min-h-screen flex flex-col justify-center items-center py-20 md:py-12"
+  >
+    <div class="container mx-auto">
+      <div class="flex flex-wrap items-center">
+        <div
+          class="w-10/12 md:w-6/12 lg:w-4/12 md:px-12 px-4 mr-auto ml-auto -mt-78"
+        >
+          <div
+            class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-primary-yellowlight"
+          >
+            <img
+              alt="Research"
+              src={`${site}img/reading.png`}
+              class="w-full align-middle rounded-t-lg"
+            />
+            <blockquote class="relative p-8 mb-4">
+              <svg
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 583 95"
+                class="absolute left-0 w-full block h-95-px -top-94-px"
+              >
+                <polygon
+                  points="-30,95 583,95 583,65"
+                  class="text-primary-yellowlight fill-current"></polygon>
+              </svg>
+              <h4 class="text-xl font-bold text-black">
+                {title}
+              </h4>
+              <slot />
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="w-full md:w-6/12 px-4">
+          <div class="flex flex-wrap">
+            {
+              Stats.map((Stat: any[], index) => (
+                <div class="w-full md:w-6/12 px-4 ">
+                  {Stat.map((ColStat) => (
+                    <a
+                      href={ColStat.link}
+                      target="_blank"
+                      class={`relative flex flex-col hover:shadow-lg hover:bg-tertiary-light hover:bg-opacity-50 ${ColStat.class}`}
+                    >
+                      <div class="px-4 py-5 flex-auto">
+                        <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                          <Icon name={ColStat.icon} class="text-4xl" />
+                        </div>
+                        <h6 class="text-xl mb-1 font-semibold">
+                          {ColStat.title}
+                        </h6>
+                        <p class="mb-4 text-blueGray-500">{ColStat.content}</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex flex-row w-full justify-center pb-12 absolute bottom cs-button"
+  >
+    <a
+      class="px-10 py-2 text-gray-200 bg-blue-500 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red"
+      href="#faq"
+    >
+      Questions?
+    </a>
+  </div>
+</div>

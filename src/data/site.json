@@ -1,16 +1,30 @@
 {
-	"author": "AWE.SOME",
-	"description": "AWE.SOME - An Astro Landing Page Template",
-	"title": "🚀 AWE.SOME - An Astro Landing Page Template",
-	"language": "en",
-	"social": [
-		{
-			"title": "Twitter",
-			"url": "https://twitter.com/#"
-		},
-		{
-			"title": "LinkedIn",
-			"url": "https://linkedin.com/company/#"
-		}
-	]
+  "author": "Denly",
+  "description": "Denly - Flatmate? Roommate? Denmate.",
+  "title": "Denly",
+  "language": "en",
+  "social": [
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/#"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://linkedin.com/company/#"
+    }
+  ],
+  "facebook": [
+    {
+      "title": "Delhi",
+      "url": "https://www.facebook.com/DenlyDelhi"
+    },
+    {
+      "title": "Gurugram",
+      "url": "https://www.facebook.com/DenlyGurugram"
+    },
+    {
+      "title": "Pune",
+      "url": "https://www.facebook.com/DenlyPune"
+    }
+  ]
 }

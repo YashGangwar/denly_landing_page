@@ -1,19 +1,23 @@
 ---
-import { getCollection } from 'astro:content'
-import Header from './Header.astro'
-import SectionResolver from './SectionResolver.astro'
+import { getCollection } from "astro:content";
+import Header from "./Header.astro";
+import SectionResolver from "./SectionResolver.astro";
 
-const sections = await getCollection('sections');
+const sections = await getCollection("sections");
 ---
+
 <Header />
 <main>
-  {sections.map(sect => {
-    return <SectionResolver
-      sect={sect}
-      title={sect.data.title}
-      afterTitle={sect.data.afterTitle || ''}
-      type={sect.data.type}
-    />
-  })}
+  {
+    sections.map((sect) => {
+      return (
+        <SectionResolver
+          sect={sect}
+          title={sect.data.title}
+          afterTitle={sect.data.afterTitle || ""}
+          type={sect.data.type}
+        />
+      );
+    })
+  }
 </main>
-</script>

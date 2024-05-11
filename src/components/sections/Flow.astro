@@ -1,0 +1,200 @@
+---
+interface Props {
+  afterTitle?: string;
+  title: string;
+}
+
+const site = Astro.site;
+const { afterTitle, title } = Astro.props;
+---
+
+<div
+  id="flow"
+  class="w-full min-h-screen flex flex-col justify-center items-center py-16 relative overflow-x-hidden bg-tertiary-light"
+>
+  <div
+    class="self-center w-full sm:w-2/3 xl:w-1/2 pt-12 px-4 sm:px-0 ft-header"
+  >
+    <h2
+      class="text-primary-yellowDark font-bold text-4xl text-center my-10 md:my-10"
+    >
+      Choose your Denly Adventure!
+    </h2>
+  </div>
+  <div
+    class="w-full flex md:flex-row flex-col justify-center items-center relative"
+  >
+    <div
+      id="click-left"
+      class="md:mx-8 mx-4 md:w-1/2 h-full bg-white hover:shadow-lg hover:bg-primary-Light hover:bg-opacity-50 p-6 md:p-8 rounded-lg"
+    >
+      <h3 class="text-blue-900 font-bold text-3xl mb-4">Only Denmate</h3>
+      <p class="text-gray-600 text-lg">
+        Choose this option if you possess a room or flat and are in search of a
+        roommate or flatmate.
+      </p>
+      <img
+        src={`${site}img/den.png`}
+        class="w-2/3 block sm:mx-auto hidden md:block"
+      />
+    </div>
+    <div
+      id="cover-left"
+      class="hover-section h-1/2 md:h-full w-full md:w-1/2 top-0 bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
+    >
+      <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center">
+        Ready to go? Click on the button to head over to our Google Form.<br />
+        <br /> Bon voyage!” 🚀✨
+      </div>
+      <br />
+      <div class="w-full flex justify-center mt-4 md:mt-10">
+        <button
+          class="cs-button-solid bg-primary text-white hover:bg-white hover:text-black cs-submit"
+          type="submit">Fill form</button
+        >
+      </div>
+    </div>
+
+    <div
+      id="click-right"
+      class="md:mx-8 mx-4 md:w-1/2 h-full bg-white hover:shadow-lg hover:bg-primary-Light hover:bg-opacity-50 p-6 md:p-8 rounded-lg md:mt-0 mt-8"
+    >
+      <h3 class="text-blue-900 font-bold text-3xl mb-4 text-right">
+        Denmate with a Den
+      </h3>
+      <p class="text-gray-600 text-lg text-right">
+        Choose this option if you seek a roommate or flatmate who has an
+        available room or flat.
+      </p>
+      <img
+        src={`${site}img/denmate.png`}
+        class="w-2/3 block sm:mx-auto hidden md:block"
+      />
+    </div>
+    <div
+      id="cover-right"
+      class="hover-section h-1/2 md:h-full w-full md:w-1/2 bottom-0 bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
+    >
+      <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center">
+        Below are the Facebook pages of the cities where Denly works its magic.
+        Pick the city where you are searching for a Denmate. 🗺️🔑
+      </div>
+      <br />
+      <div class="city-buttons flex flex-row mt-4 md:mt-10">
+        <a href="https://www.facebook.com/DenlyDelhi">
+          <button
+            class="cs-button-solid bg-primary text-white hover:bg-white hover:text-black cs-submit mr-1"
+            type="submit"
+          >
+            Delhi
+          </button>
+        </a>
+        <a href="https://www.facebook.com/DenlyGurugram">
+          <button
+            class="cs-button-solid bg-primary text-white hover:bg-white hover:text-black cs-submit mr-1"
+            type="submit">Gurugram</button
+          ></a
+        >
+        <a href="https://www.facebook.com/DenlyPune">
+          <button
+            class="cs-button-solid bg-primary text-white hover:bg-white hover:text-black cs-submit"
+            type="submit">Pune</button
+          >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  /* Mobile - 1023px */
+  @media only screen and (min-width: 0rem) {
+    #cover-right.open {
+      right: 0;
+    }
+
+    #cover-right.close {
+      right: -100dvh;
+    }
+    #cover-left.open {
+      left: 0;
+    }
+
+    #cover-left.close {
+      left: -100dvh;
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #flow #cover-right .open {
+      right: 0;
+    }
+
+    #flow #cover-right .close {
+      right: -50dvh;
+    }
+    #flow #cover-left .open {
+      left: 0;
+    }
+
+    #flow #cover-left .close {
+      left: -50dvh;
+    }
+  }
+
+  #flow .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    min-width: 5rem;
+    padding: 0 2rem;
+    display: inline-block;
+    z-index: 1;
+
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+
+  #flow .hover-section {
+    position: absolute;
+    background: var(--mainBlue);
+    z-index: 2;
+    overflow-x: hidden;
+    /* text-wrap: nowrap; */
+    transition: 0.3s;
+  }
+</style>
+
+<script>
+  var section1 = document.getElementById("cover-left");
+  var section2 = document.getElementById("cover-right");
+  document.getElementById("click-left").addEventListener("click", function () {
+    console.log("clicked");
+    if (section2.classList.contains("open")) {
+      section2.classList.remove("open");
+
+      section2.classList.add("close");
+    }
+    section1.classList.remove("close");
+    section1.classList.add("open");
+  });
+  document.getElementById("click-right").addEventListener("click", function () {
+    if (section1.classList.contains("open")) {
+      section1.classList.remove("open");
+      section1.classList.add("close");
+    }
+    section2.classList.remove("close");
+    section2.classList.add("open");
+  });
+  document.getElementById("cover-left").addEventListener("click", function () {
+    section1.classList.remove("open");
+    section1.classList.add("close");
+  });
+  document.getElementById("cover-right").addEventListener("click", function () {
+    section2.classList.remove("open");
+    section2.classList.add("close");
+  });
+</script>

@@ -1,32 +1,32 @@
 [
   {
-    "title": "AWE.SOME Feature One",
+    "title": "Location",
     "icon": "icon1.svg",
-    "content": "Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt."
+    "content": "Connect with Denmates who live in your desired neighborhood"
   },
   {
-    "title": "AWE.SOME Feature Two",
-    "icon": "icon2.svg",
-    "content": "Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt."
-  },
-  {
-    "title": "AWE.SOME Feature Three",
+    "title": "Shared Interests",
     "icon": "icon3.svg",
-    "content": "Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt."
+    "content": "Match with Denmates who enjoy similar hobbies and activities"
   },
   {
-    "title": "AWE.SOME Feature Four",
+    "title": "Career Alignment",
+    "icon": "icon2.svg",
+    "content": "Students, professionals, or competitive exams aspirants, find Denmates who share your career focus"
+  },
+  {
+    "title": "Lifestyle Compatibility",
     "icon": "icon4.svg",
-    "content": "Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt."
+    "content": "Connect with Denmates whose lifestyle aligns with yours, including smoking, drinking and other personal habits"
   },
   {
-    "title": "AWE.SOME Feature Five",
+    "title": "Personal Preferences",
     "icon": "icon5.svg",
-    "content": "Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt."
+    "content": "Discover Denmates who match your personal preferences, like dietary needs and pet ownership"
   },
   {
-    "title": "AWE.SOME Feature Six",
+    "title": "Cultural Harmony",
     "icon": "icon6.svg",
-    "content": "Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt."
+    "content": "Connect with Denmates who both appreciate cultural diversity and share common values"
   }
 ]

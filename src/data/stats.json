@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "title": "Psychological effects",
+      "content": "Positive communication with roommates correlates with better psychological adjustment.",
+      "link": "https://psycnet.apa.org/record/1984-32748-001",
+      "icon": "head",
+      "class": "mt-4"
+    },
+    {
+      "title": "Stress levels",
+      "content": "Relationship with housemates predicts stress levels in residence hall students.",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/16050324/",
+      "icon": "sweat",
+      "class": "min-w-0"
+    }
+  ],
+  [
+    {
+      "title": "Social adjustments",
+      "content": "Strong roommate communication skills and quality relationships associated with higher GPA and retention.",
+      "link": "https://psycnet.apa.org/record/1984-32748-001",
+      "icon": "handshake",
+      "class": "min-w-0 mt-4"
+    },
+    {
+      "title": "Miscommunications",
+      "content": "Top problems in shared accommodation are miscommunications and mismatch of choices",
+      "link": "https://ijip.in/wp-content/uploads/2023/12/18.01.174.20231104.pdf",
+      "icon": "comments",
+      "class": "min-w-0"
+    }
+  ]
+]

@@ -1,40 +1,151 @@
 ---
-import features from '../../data/features.json'
+import features from "../../data/features.json";
 
 interface Props {
-  afterTitle?: string,
-  title: string
+  afterTitle?: string;
+  title: string;
 }
 
-const site = Astro.site
-const { afterTitle, title } = Astro.props
+const site = Astro.site;
+const { afterTitle, title } = Astro.props;
 ---
-<div id="features" class="w-full min-h-screen flex flex-col justify-center items-center bg-blue-900 py-12">
-  <div class="self-center text-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px-0">
-    <h2 class="tracking-wide text-blue-200 font-bold text-4xl mb-4">{title}</h2>
-    <div class="font-light text-gray-200 text-xl mb-6">
-      <slot />
+
+<div
+  id="features"
+  class="w-full min-h-screen flex flex-col justify-center items-center bg-blue-900 py-16 relative"
+>
+  <div
+    class="self-center w-full sm:w-2/3 xl:w-1/2 pt-12 px-4 sm:px-0 ft-header"
+  >
+    <img src={`${site}img/chemGirl.png`} class="chem-girl" />
+    <div class="ft-header-title">
+      <h2
+        class="tracking-wide text-blue-200 font-bold text-3xl md:text-4xl mb-4"
+      >
+        {title}
+      </h2>
+      <div class="font-light text-gray-200 text-lg md:text-xl mb-6">
+        <slot />
+      </div>
     </div>
   </div>
-  <div class="self-center w-full xl:w-4/5 flex flex-col sm:flex-row flex-wrap px-4 xl:px:0">
-    {features.map((feat) => (
-      <div class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-blue-800 hover:bg-opacity-50 px-4 sm:px-8 py-6 sm:py-12">
-        <div class="w-1/3 xl:w-1/4">
-          <img src={`${site}img/features/${feat.icon}`} alt={feat.title} class="w-16 block sm:mx-auto" />
-        </div>
-        <div class="w-2/3 xl:w-3/4">
-          <h3 class="tracking-wide text-purple-300 font-bold text-2xl uppercase mb-2">{feat.title}</h3>
-          <div class="font-light text-gray-200 text-lg">
-            {feat.content}
+  <div
+    class="self-center w-full xl:w-4/5 flex flex-col sm:flex-row flex-wrap px-4 xl:px:0"
+  >
+    {
+      features.map((feat) => (
+        <div class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-blue-800 hover:bg-opacity-50 px-4 sm:px-8 py-6 sm:py-6">
+          <div class="w-1/3 xl:w-1/4">
+            <img
+              src={`${site}img/features/${feat.icon}`}
+              alt={feat.title}
+              class="w-16 block sm:mx-auto"
+            />
+          </div>
+          <div class="w-2/3 xl:w-3/4">
+            <h3 class="tracking-wide text-primary-yellowDark font-bold text-xl md:text-2xl uppercase mb-2">
+              {feat.title}
+            </h3>
+            <div class="font-light text-gray-200 text-lg md:text-xl">
+              {feat.content}
+            </div>
           </div>
         </div>
-      </div>
-    ))}
+      ))
+    }
   </div>
   <div class="self-center text-center w-full sm:w-1/3 px-4 sm:px-0">
-    {afterTitle && <h3 class="font-bold tracking-widest text-blue-200 text-2xl my-6">{afterTitle}</h3>}
+    {
+      afterTitle && (
+        <h3 class="font-bold tracking-widest text-blue-200 text-2xl my-10">
+          {afterTitle}
+        </h3>
+      )
+    }
   </div>
-  <div class="flex flex-row w-full justify-center pt-6">
-    <a class="px-10 py-2 text-gray-200 bg-purple-600 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red" href="#register">Register Now</a>
+  <div
+    class="flex flex-row w-full justify-center pb-12 absolute bottom cs-button"
+  >
+    <a
+      class="px-10 py-2 text-gray-200 bg-blue-500 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red"
+      href="#steps">Our process</a
+    >
   </div>
 </div>
+
+<style>
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #features {
+      .ft-header-title {
+        text-align: center;
+      }
+      .ft-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .chem-girl {
+        width: 50%;
+      }
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #features {
+      .ft-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 0 1rem;
+      }
+      .chem-girl {
+        width: 30%;
+        height: auto;
+        margin-right: 1rem;
+        /* position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 1rem; */
+      }
+    }
+
+    .ft-header-title {
+      width: 50%;
+    }
+  }
+
+  /* Desktop - 1400px */
+  @media only screen and (min-width: 87.5rem) {
+    #features {
+      .ft-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        padding: 0 1rem;
+      }
+      .chem-girl {
+        width: 25%;
+        height: auto;
+        margin-right: 10rem;
+        /* position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 1rem; */
+      }
+      .ft-header-title {
+        width: 50%;
+        text-align: left;
+      }
+    }
+  }
+
+  /* .chem-girl {
+    width: 25%;
+    opacity: 1;
+    height: auto;
+  } */
+</style>

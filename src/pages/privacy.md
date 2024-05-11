@@ -3,25 +3,107 @@ layout: ../layouts/Page.astro
 title: Privacy Policy
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id rhoncus est. Nullam sit amet justo nisi. Aliquam elementum iaculis nulla bibendum congue. Integer convallis ut nisi at tincidunt. Sed eu diam ex. Ut efficitur velit ut ultrices semper. Morbi suscipit ut purus a placerat. Cras massa lorem, pretium et nibh in, faucibus fermentum dolor. Nulla lacinia malesuada molestie. Proin et risus turpis. Aenean lacinia, orci at egestas fringilla, sem libero facilisis lectus, ut porta justo ligula a quam. Mauris vulputate purus mauris, eget semper ante rutrum id. Duis vestibulum, turpis at ultricies aliquam, enim dolor lobortis leo, at laoreet elit odio at nunc. Aliquam sit amet erat mi.
+**Effective Date:** \_\_ April, 2024.
 
-Cras mattis justo id convallis porta. Pellentesque ullamcorper fringilla odio at pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla mattis erat dui, ut tempor lectus dictum id. Mauris ornare massa a nisi gravida, id ultrices ex cursus. Donec quis porttitor nisl, non viverra dui. Donec nec gravida arcu. Pellentesque dignissim at libero id bibendum. Vivamus pulvinar nibh risus, et egestas odio interdum id. Cras eleifend risus molestie mollis finibus. Aenean tortor elit, accumsan vel fermentum pharetra, molestie ut felis.
+**Introduction:** Welcome to Denly, the roommate/flatmate matching
+service ("Service") operated by Denly ("we", "us", or "our"). We are
+committed to protecting your personal information and your right to
+privacy. This Privacy Policy applies to all information collected
+through our website (https://denly.co), and/or any related services,
+sales, marketing, or events (we refer to them collectively in this
+privacy policy as the "Services").
 
-Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt. Aliquam semper felis sed leo sodales scelerisque. Vivamus vitae erat vel tellus condimentum consectetur at ac velit. Mauris massa tortor, cursus sit amet turpis in, lacinia ultricies nulla.
+**Information We Collect:** In order to help you find the best match
+for a roommate or flatmate, we collect the following types of
+information:
 
-Integer finibus sem sit amet diam luctus, ut posuere enim dapibus. Nunc euismod dignissim dui a maximus. Phasellus pulvinar neque at lorem ultricies suscipit. Maecenas felis erat, ornare eget egestas et, ultricies vitae ante. In convallis quam lectus, sit amet elementum ligula pulvinar ac. Integer sapien ipsum, congue a purus vel, sollicitudin lacinia ligula. Ut varius sit amet lectus quis congue. Ut viverra lectus tellus, a pharetra neque egestas eu. Morbi feugiat, arcu id bibendum vulputate, risus mi finibus enim, sed pulvinar ipsum sem eu risus. Aenean accumsan elementum ipsum, eu porttitor libero auctor at. Duis nec ipsum velit. Aliquam ac ullamcorper nisl. Duis mattis malesuada leo, quis egestas turpis molestie nec. Curabitur dui tortor, volutpat quis varius et, posuere eget augue. Praesent sed pretium dui. Vivamus auctor ex vitae nisl commodo interdum.
+- **Personal Identification Information**: Name, phone number, email
 
-Nam non quam vel velit sagittis consequat non vel odio. Phasellus condimentum dictum orci, quis rhoncus lacus hendrerit non. Ut vel nisl lectus. Duis vitae varius enim. Morbi placerat urna sit amet sollicitudin viverra. Vivamus maximus metus ac ornare venenatis. Ut suscipit nec sapien ac fringilla. Phasellus et justo eget odio lacinia feugiat. Nullam laoreet eros a lectus pretium, sed euismod velit tincidunt.
+  > address, etc.
 
-#### Website enhancements ####
+- **Demographic Information**: Age, gender, occupation, etc.
 
-This website uses the follwing packages from <a href="https://unpkg.com" rel="noopener" target="_blank" title="UNPKG">unpkg.com</a>:
+- **Lifestyle Preferences**: Hobbies, smoking habits, drinking
 
-- &dash; popper.js
-- &dash; tippy.js
+  > habits, and other personal lifestyle questions.
 
-Using these packages, personal data may be transmitted.
+- **Usage Data**: Information on how the Service is accessed and
+  > used.
 
-### Your rights ###
+**How We Use Your Information:** We use the information we collect in
+various ways, including to:
 
-Integer finibus sem sit amet diam luctus, ut posuere enim dapibus. Nunc euismod dignissim dui a maximus. Phasellus pulvinar neque at lorem ultricies suscipit. Maecenas felis erat, ornare eget egestas et, ultricies vitae ante. In convallis quam lectus, sit amet elementum ligula pulvinar ac. Integer sapien ipsum, congue a purus vel, sollicitudin lacinia ligula. Ut varius sit amet lectus quis congue. Ut viverra lectus tellus, a pharetra neque egestas eu. Morbi feugiat, arcu id bibendum vulputate, risus mi finibus enim, sed pulvinar ipsum sem eu risus. Aenean accumsan elementum ipsum, eu porttitor libero auctor at. Duis nec ipsum velit. Aliquam ac ullamcorper nisl. Duis mattis malesuada leo, quis egestas turpis molestie nec. Curabitur dui tortor, volutpat quis varius et, posuere eget augue. Praesent sed pretium dui. Vivamus auctor ex vitae nisl commodo interdum.
+- Provide, operate, and maintain our Services.
+
+- Improve, personalize, and expand our Services.
+
+- Understand and analyze how you use our Services.
+
+- Develop new products, services, features, and
+
+  > functionality.
+
+- Communicate with you, either directly or through one of our
+
+  > partners, including for customer service, to provide you with
+  > updates and other information relating to the Service, and for
+  > marketing and promotional purposes.
+
+- Send you emails.
+
+- Find and prevent fraud.
+
+**Sharing Your Information:** We may share the information we collect
+in certain situations. Your information may be disclosed as
+follows:
+
+- **Consent**: We may share your information with your
+
+  > consent.
+
+- **Business Transfers**: We may share or transfer your information
+
+  > in connection with, or during negotiations of, any merger, sale of
+  > company assets, financing, or acquisition of all or a portion of
+  > our business to another company.
+
+- **Other Users**: When you share personal information or otherwise
+  > interact with public areas of the Service, such information may be
+  > viewed by all users and may be publicly distributed
+  > outside.
+
+**Other Sharing of Data:** We may share your information with third
+parties in the following situations:
+
+- To comply with legal obligations
+
+- To protect and defend our rights or property
+
+- To prevent or investigate possible wrongdoing in connection with
+
+  > the Service
+
+- To protect the personal safety of users of the Service or the
+  > public
+
+**Data Retention** We will retain your personal information only for as
+long as is necessary for the purposes set out in this Privacy
+Policy.
+
+**Security of Your Information** We use administrative, technical, and
+physical security measures to help protect your personal information.
+However, we cannot guarantee that the internet itself is 100%
+secure.
+
+**Your Privacy Rights** You have certain rights regarding the
+information we collect, including the right to access, correct, update,
+or request deletion of your personal information.
+
+**Policy Updates** We may update this privacy policy from time to time.
+The updated version will be indicated by an updated "Revised"
+date.
+
+**Contact Us** If you have questions or comments about this policy, you
+may email us at feedback@denly.co.
+
+This policy is effective as of April \_\_\_, 2024.

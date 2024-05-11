@@ -1,0 +1,210 @@
+---
+import Faqs from "../../data/faq.json";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div
+  id="faq"
+  class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-800"
+>
+  <div class="cs-container w-full xl:w-1/3 px-4 sm:px-0">
+    <div class="cs-content">
+      <h2 class="font-bold tracking-widest text-gray-200 text-4xl mb-4">
+        {title}
+      </h2>
+      <span class="cs-topper mb-12"><slot /></span>
+    </div>
+    {
+      Faqs.map((faqSection) => (
+        <ul class="cs-faq-group">
+          {faqSection.map((faq) => (
+            <li class="cs-faq-item">
+              <button class="cs-button">
+                <span class="cs-button-text text-tertiaryLight">
+                  {faq.ques}
+                </span>
+              </button>
+              <p class="cs-item-p text-gray-200">{faq.answ}</p>
+            </li>
+          ))}
+        </ul>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  /*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #faq {
+      padding: var(--sectionPadding);
+    }
+    #faq .cs-container {
+      width: 100%;
+      /* changes to 1280px at desktop */
+      max-width: 34.375rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+    }
+    #faq .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+    }
+
+    #faq .cs-title {
+      margin: 0;
+    }
+    #faq .cs-faq-group {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #faq .cs-faq-item {
+      list-style: none;
+      width: 100%;
+      border-bottom: 1px solid #e8e8e8;
+      transition: border-bottom 0.3s;
+    }
+    #faq .cs-faq-item.active {
+      border-color: var(--primaryLight);
+    }
+    #faq .cs-faq-item.active .cs-button {
+      color: var(--primaryLight);
+    }
+    #faq .cs-faq-item.active .cs-button:before {
+      background-color: var(--primaryLight);
+      transform: rotate(315deg);
+    }
+    #faq .cs-faq-item.active .cs-button:after {
+      background-color: var(--primaryLight);
+      transform: rotate(-315deg);
+    }
+    #faq .cs-faq-item.active .cs-item-p {
+      height: auto;
+      /* 20px - 24px bottom */
+      /* 16px - 24px left & right */
+      padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
+      opacity: 1;
+    }
+    #faq .cs-button {
+      font-size: 1rem;
+      line-height: 1.2em;
+      text-align: left;
+      /* 16px - 20px */
+      padding: clamp(1rem, 1.3vw, 1.25rem);
+      border: none;
+      background: transparent;
+      color: var(--tertiaryLight);
+      display: block;
+      width: 100%;
+      position: relative;
+      transition:
+        background-color 0.3s,
+        color 0.3s;
+    }
+    #faq .cs-button:hover {
+      cursor: pointer;
+    }
+    #faq .cs-button:before {
+      /* left line */
+      content: "";
+      width: 0.5rem;
+      height: 0.125rem;
+      background-color: var(--tertiaryLight);
+      opacity: 1;
+      border-radius: 50%;
+      position: absolute;
+      display: block;
+      top: 45%;
+      right: 1.5rem;
+      transform: rotate(45deg);
+      /* animate the transform from the left side of the x axis, and the center of the y */
+      transform-origin: left center;
+      transition: transform 0.5s;
+    }
+    #faq .cs-button:after {
+      /* right line */
+      content: "";
+      width: 0.5rem;
+      height: 0.125rem;
+      background-color: var(--tertiaryLight);
+      opacity: 1;
+      border-radius: 50%;
+      position: absolute;
+      display: block;
+      top: 45%;
+      right: 1.3125rem;
+      transform: rotate(-45deg);
+      /* animate the transform from the right side of the x axis, and the center of the y */
+      transform-origin: right center;
+      transition: transform 0.5s;
+    }
+    #faq .cs-button-text {
+      width: 80%;
+      display: block;
+    }
+    #faq .cs-item-p {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      width: 90%;
+      height: 0;
+      margin: 0;
+      /* 16px - 24px */
+      padding: 0 clamp(1rem, 2vw, 1.5rem);
+      opacity: 0;
+      /* clips the text so it doesn't show up */
+      overflow: hidden;
+      transition:
+        opacity 0.3s,
+        padding-bottom 0.3s;
+    }
+  }
+  /* Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #faq .cs-container {
+      max-width: 100rem;
+      flex-direction: row;
+      justify-content: space-between;
+      /* push everything to the top */
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    #faq .cs-content {
+      width: 100%;
+    }
+    #faq .cs-faq-group {
+      width: 48%;
+    }
+  }
+</style>
+
+<script>
+  const faqItems = Array.from(document.querySelectorAll(".cs-faq-item"));
+  for (const item of faqItems) {
+    const onClick = () => {
+      item.classList.toggle("active");
+    };
+    item.addEventListener("click", onClick);
+  }
+</script>
