@@ -17,13 +17,19 @@ const { title } = Astro.props;
       <h2 class="cs-title">{title}</h2>
       <picture class="cs-picture">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset={`${site}img/hiThere.png`} />
+        <source
+          media="(max-width: 600px)"
+          srcset={`${site}denly_landing_page/img/hiThere.png`}
+        />
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset={`${site}img/hiThere.png`} />
+        <source
+          media="(min-width: 601px)"
+          srcset={`${site}denly_landing_page/img/hiThere.png`}
+        />
         <img
           loading="lazy"
           decoding="async"
-          src={`${site}img/hiThere.png`}
+          src={`${site}denly_landing_page/img/hiThere.png`}
           alt="body builder"
           width="562"
           height="568"
