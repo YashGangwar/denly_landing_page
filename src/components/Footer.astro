@@ -4,8 +4,8 @@ import siteData from "../data/site.json";
 const pn = Astro.url.pathname;
 const isHome = pn === "/";
 const site = Astro.site;
-const abtLink = isHome ? "#about" : `${site}denly-landing-page/#about`;
-const ftLink = isHome ? "#features" : `${site}denly-landing-page/#features`;
+const abtLink = isHome ? "#about" : `${site}#about`;
+const ftLink = isHome ? "#features" : `${site}#features`;
 ---
 
 <footer
@@ -50,13 +50,13 @@ const ftLink = isHome ? "#features" : `${site}denly-landing-page/#features`;
       <li>
         <a
           class="text-gray-800 hover:text-blue-500 no-underline"
-          href={`${site}denly-landing-page/privacy`}>Privacy</a
+          href={`${site}privacy`}>Privacy</a
         >
       </li>
       <li>
         <a
           class="text-gray-800 hover:text-blue-500 no-underline"
-          href={`${site}denly-landing-page/imprint`}>Imprint</a
+          href={`${site}imprint`}>Imprint</a
         >
       </li>
     </ul>
