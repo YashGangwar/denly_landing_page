@@ -76,40 +76,36 @@ const { afterTitle, title } = Astro.props;
 <style>
   /* Mobile - 360px */
   @media only screen and (min-width: 0rem) {
-    #features {
-      .ft-header-title {
-        text-align: center;
-      }
-      .ft-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+    #features .ft-header-title {
+      text-align: center;
+    }
+    #features .ft-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-      .chem-girl {
-        width: 50%;
-      }
+    #features .chem-girl {
+      width: 50%;
     }
   }
   /* Tablet - 768px */
   @media only screen and (min-width: 48rem) {
-    #features {
-      .ft-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        padding: 0 1rem;
-      }
-      .chem-girl {
-        width: 30%;
-        height: auto;
-        margin-right: 1rem;
-        /* position: absolute;
+    #features .ft-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      padding: 0 1rem;
+    }
+    #features .chem-girl {
+      width: 30%;
+      height: auto;
+      margin-right: 1rem;
+      /* position: absolute;
         top: 0;
         right: 0;
         margin-top: 1rem; */
-      }
     }
 
     .ft-header-title {
@@ -119,27 +115,25 @@ const { afterTitle, title } = Astro.props;
 
   /* Desktop - 1400px */
   @media only screen and (min-width: 87.5rem) {
-    #features {
-      .ft-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 80%;
-        padding: 0 1rem;
-      }
-      .chem-girl {
-        width: 25%;
-        height: auto;
-        margin-right: 10rem;
-        /* position: absolute;
+    #features .ft-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 80%;
+      padding: 0 1rem;
+    }
+    #features .chem-girl {
+      width: 25%;
+      height: auto;
+      margin-right: 10rem;
+      /* position: absolute;
         top: 0;
         right: 0;
         margin-top: 1rem; */
-      }
-      .ft-header-title {
-        width: 50%;
-        text-align: left;
-      }
+    }
+    #features .ft-header-title {
+      width: 50%;
+      text-align: left;
     }
   }
 </style>
