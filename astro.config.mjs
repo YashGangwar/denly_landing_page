@@ -12,12 +12,12 @@ const env = process.env.NODE_ENV
 
 switch (env) {
   case 'pages':
-    build.baseURL = '/'
+    build.baseURL = '/denly_landing_page/'
     build.siteURL = 'https://yashgangwar.github.io'
     break
 
   case 'production':
-    build.baseURL = '/'
+    build.baseURL = '/denly_landing_page/'
     build.siteURL = 'https://yashgangwar.github.io'
     break
 
