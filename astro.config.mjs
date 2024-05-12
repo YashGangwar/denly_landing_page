@@ -29,9 +29,9 @@ export default defineConfig({
   site: build.siteURL,
   base: build.baseURL,
   integrations: [
-    icon(),
     tailwind({
-      applyBaseStyles: false
-    })
+      applyBaseStyles: true
+    }),
+    icon()
   ]
 })

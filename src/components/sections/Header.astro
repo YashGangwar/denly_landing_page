@@ -1,12 +1,8 @@
 ---
 import Navbar from "../Navbar.astro";
-import "@fontsource-variable/quicksand";
 
-const headerListItems = ["Roommate?", "Flatmate?"];
 const site = Astro.site;
 ---
-
-<link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet" />
 
 <header
   id="home"
@@ -20,7 +16,7 @@ const site = Astro.site;
       <div class="w-full text-center sm:text-left sm:w-1/2 py-12 sm:px-8">
         <h1 class="tracking-wide text-blue-500 text-6xl mb-6">
           <span
-            class="title-denly text-blue-900 font-bold tracking tracking-widest text-lemon"
+            class="title-denly text-blue-900 font-bold tracking tracking-widest"
             >Denly</span
           >
         </h1>
@@ -65,7 +61,7 @@ const site = Astro.site;
   >
     <a
       class="px-10 py-2 text-gray-200 bg-blue-500 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red"
-      href="#about"
+      href="denly-landing-page/#about"
     >
       More Information
     </a>
@@ -74,12 +70,7 @@ const site = Astro.site;
 
 <style>
   body {
-    font-family: "Quicksand";
     background-color: #131417;
-
-    .text-lemon {
-      font-family: "Lemon/Milk", sans-serif;
-    }
   }
   p {
     text-shadow:
