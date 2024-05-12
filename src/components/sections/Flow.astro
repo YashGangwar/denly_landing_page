@@ -5,12 +5,12 @@ interface Props {
 }
 
 const site = Astro.site;
-const { title } = Astro.props;
+const { title, afterTitle } = Astro.props;
 ---
 
 <div
   id="flow"
-  class="w-full min-h-screen flex flex-col justify-center items-center py-16 relative overflow-x-hidden bg-tertiary-light"
+  class="w-full min-h-screen flex flex-col justify-center items-center py-16 relative overflow-x-hidden bg-main-blue"
 >
   <div
     class="self-center w-full sm:w-2/3 xl:w-1/2 pt-12 px-4 sm:px-0 ft-header"
@@ -20,6 +20,9 @@ const { title } = Astro.props;
     >
       {title}
     </h2>
+    <h3 class="text-gray-200 text-2xl text-center my-10 md:my-10">
+      {afterTitle}
+    </h3>
   </div>
   <div
     class="w-full flex md:flex-row flex-col justify-center items-center relative"
@@ -40,17 +43,16 @@ const { title } = Astro.props;
     </div>
     <div
       id="cover-left"
-      class="hover-section h-1/2 md:h-full w-full md:w-1/2 top-0 bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
+      class="hover-section h-1/2 md:h-full w-full md:w-1/2 top-0 md:top-px bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
     >
       <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center">
         Ready to go? Click on the button to head over to our Google Form.<br />
-        <br /> Bon voyage!” 🚀✨
       </div>
       <br />
       <div class="w-full flex justify-center mt-4 md:mt-10">
         <button
           class="cs-button-solid bg-primary text-white hover:bg-white hover:text-black cs-submit"
-          type="submit">Fill form</button
+          type="submit">Bon voyage! 🚀✨</button
         >
       </div>
     </div>
@@ -73,7 +75,7 @@ const { title } = Astro.props;
     </div>
     <div
       id="cover-right"
-      class="hover-section h-1/2 md:h-full w-full md:w-1/2 bottom-0 bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
+      class="hover-section h-1/2 md:h-full w-full md:w-1/2 md:top-px -bottom-px md:bottom-0 bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
     >
       <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center">
         Below are the Facebook pages of the cities where Denly works its magic.
@@ -113,14 +115,14 @@ const { title } = Astro.props;
     }
 
     #cover-right.close {
-      right: -100dvh;
+      right: -100dvw;
     }
     #cover-left.open {
       left: 0;
     }
 
     #cover-left.close {
-      left: -100dvh;
+      left: -100dvw;
     }
   }
 
@@ -131,14 +133,14 @@ const { title } = Astro.props;
     }
 
     #flow #cover-right .close {
-      right: -50dvh;
+      right: -50dvw;
     }
     #flow #cover-left .open {
       left: 0;
     }
 
     #flow #cover-left .close {
-      left: -50dvh;
+      left: -50dvw;
     }
   }
 
@@ -163,6 +165,7 @@ const { title } = Astro.props;
     background: var(--mainBlue);
     z-index: 2;
     overflow-x: hidden;
+    opacity: 0.9;
     /* text-wrap: nowrap; */
     transition: 0.3s;
   }
