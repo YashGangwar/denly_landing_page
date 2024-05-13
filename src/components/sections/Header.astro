@@ -51,18 +51,28 @@ const site = Astro.site;
           </span>
         </div>
       </div>
-      <div class="w-full sm:w-1/2">
+      <div class="w-4/5 md:w-3/5 lg:w-2/5">
         <img src={`${site}denly_landing_page/img/doodle.png`} alt="Roomies" />
       </div>
     </div>
     <div
-      class="flex flex-row w-full justify-center pb-4 absolute bottom cs-button"
+      class="flex-row w-full justify-center pb-4 absolute bottom cs-button hidden md:flex"
     >
       <a
         class="px-10 py-2 text-gray-200 bg-blue-500 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red"
         href="#about"
       >
         More Information
+      </a>
+    </div>
+    <div
+      class="flex-row w-full justify-center pb-4 absolute bottom cs-button flex md:hidden"
+    >
+      <a
+        class="px-10 py-2 text-gray-900 bg-primary rounded-full shadow-md text-lg hover:bg-gray-800 hover:text-white hover:border-red"
+        href="/denly_landing_page/flow"
+      >
+        Get Started
       </a>
     </div>
   </div>

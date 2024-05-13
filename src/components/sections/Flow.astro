@@ -16,7 +16,7 @@ const { title, afterTitle } = Astro.props;
     class="self-center w-full sm:w-2/3 xl:w-1/2 pt-12 px-4 sm:px-0 ft-header"
   >
     <h2
-      class="text-primary-yellowDark font-bold text-4xl text-center my-10 md:my-10"
+      class="text-primary-yellow font-bold text-4xl text-center my-10 md:my-10"
     >
       {title}
     </h2>
@@ -46,14 +46,18 @@ const { title, afterTitle } = Astro.props;
       class="hover-section h-1/2 md:h-full w-full md:w-1/2 top-0 md:top-px bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
     >
       <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center text-gray-700">
-        Ready to go? Click on the button to head over to our Google Form.<br />
+        Ready to go? Click the button to head over to our Google Form.<br />
       </div>
       <br />
       <div class="w-full flex justify-center mt-4 md:mt-10">
-        <button
-          class="cs-button-solid bg-main-blue text-white hover:bg-white hover:text-black cs-submit"
-          type="submit">Bon voyage! 🚀✨</button
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSefeYnUja0MYyFt0lE9VGngcL69jZTLArvZhb679EEPzEFkqA/viewform?usp=sharing"
         >
+          <button
+            class="cs-button-solid bg-main-blue text-white hover:bg-white hover:text-black cs-submit"
+            type="submit">Bon voyage! 🚀✨</button
+          >
+        </a>
       </div>
     </div>
 

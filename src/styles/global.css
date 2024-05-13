@@ -219,6 +219,10 @@ html {
 .z-index-2 {
   z-index: 2;
 }
+
+.text-primary-yellow {
+  color: var(--primary);
+}
 .text-primary-yellowlight {
   color: var(--primaryLight);
 }

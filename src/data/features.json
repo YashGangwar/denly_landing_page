@@ -1,32 +1,32 @@
 [
   {
     "title": "Location",
-    "icon": "icon1.svg",
+    "icon": "location.svg",
     "content": "Connect with Denmates who live in your desired neighborhood"
   },
   {
     "title": "Shared Interests",
-    "icon": "icon3.svg",
+    "icon": "interests.svg",
     "content": "Match with Denmates who enjoy similar hobbies and activities"
   },
   {
     "title": "Career Alignment",
-    "icon": "icon2.svg",
+    "icon": "career.svg",
     "content": "Students, professionals, or competitive exams aspirants, find Denmates who share your career focus"
   },
   {
     "title": "Lifestyle Compatibility",
-    "icon": "icon4.svg",
+    "icon": "lifestyle.svg",
     "content": "Connect with Denmates whose lifestyle aligns with yours, including smoking, drinking and other personal habits"
   },
   {
     "title": "Personal Preferences",
-    "icon": "icon5.svg",
+    "icon": "personal.svg",
     "content": "Discover Denmates who match your personal preferences, like dietary needs and pet ownership"
   },
   {
     "title": "Cultural Harmony",
-    "icon": "icon6.svg",
+    "icon": "harmony.svg",
     "content": "Connect with Denmates who both appreciate cultural diversity and share common values"
   }
 ]
