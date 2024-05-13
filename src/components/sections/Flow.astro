@@ -45,13 +45,13 @@ const { title, afterTitle } = Astro.props;
       id="cover-left"
       class="hover-section h-1/2 md:h-full w-full md:w-1/2 top-0 md:top-px bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
     >
-      <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center">
+      <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center text-gray-700">
         Ready to go? Click on the button to head over to our Google Form.<br />
       </div>
       <br />
       <div class="w-full flex justify-center mt-4 md:mt-10">
         <button
-          class="cs-button-solid bg-primary text-white hover:bg-white hover:text-black cs-submit"
+          class="cs-button-solid bg-main-blue text-white hover:bg-white hover:text-black cs-submit"
           type="submit">Bon voyage! 🚀✨</button
         >
       </div>
@@ -77,7 +77,7 @@ const { title, afterTitle } = Astro.props;
       id="cover-right"
       class="hover-section h-1/2 md:h-full w-full md:w-1/2 md:top-px -bottom-px md:bottom-0 bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
     >
-      <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center">
+      <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center text-gray-700">
         Below are the Facebook pages of the cities where Denly works its magic.
         Pick the city where you are searching for a Denmate. 🗺️🔑
       </div>
@@ -85,7 +85,7 @@ const { title, afterTitle } = Astro.props;
       <div class="city-buttons flex flex-row mt-4 md:mt-10">
         <a href="https://www.facebook.com/DenlyDelhi">
           <button
-            class="cs-button-solid bg-primary text-white hover:bg-white hover:text-black cs-submit mr-1"
+            class="cs-button-solid bg-main-blue text-white hover:bg-white hover:text-black cs-submit mr-1 md:mr-4"
             type="submit"
           >
             Delhi
@@ -93,13 +93,13 @@ const { title, afterTitle } = Astro.props;
         </a>
         <a href="https://www.facebook.com/DenlyGurugram">
           <button
-            class="cs-button-solid bg-primary text-white hover:bg-white hover:text-black cs-submit mr-1"
+            class="cs-button-solid bg-main-blue text-white hover:bg-white hover:text-black cs-submit mr-1 md:mr-4"
             type="submit">Gurugram</button
           ></a
         >
         <a href="https://www.facebook.com/DenlyPune">
           <button
-            class="cs-button-solid bg-primary text-white hover:bg-white hover:text-black cs-submit"
+            class="cs-button-solid bg-main-blue text-white hover:bg-white hover:text-black cs-submit"
             type="submit">Pune</button
           >
         </a>
@@ -162,10 +162,9 @@ const { title, afterTitle } = Astro.props;
 
   #flow .hover-section {
     position: absolute;
-    background: var(--mainBlue);
+    background: var(--primary);
     z-index: 2;
     overflow-x: hidden;
-    opacity: 0.9;
     /* text-wrap: nowrap; */
     transition: 0.3s;
   }

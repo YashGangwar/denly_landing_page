@@ -6,9 +6,10 @@ const isHome = pn === "/";
 const site = Astro.site;
 const homeLink = isHome ? "#home" : `${site}denly_landing_page/#home`;
 const abtLink = isHome ? "#about" : `${site}denly_landing_page/#about`;
-const stepsLink = isHome ? "#steps" : `${site}denly_landing_page/#steps`;
 const ftLink = isHome ? "#features" : `${site}denly_landing_page/#features`;
-const regLink = isHome ? "#register" : `${site}denly_landing_page/#register`;
+const stepsLink = isHome ? "#steps" : `${site}denly_landing_page/#steps`;
+const whyLink = isHome ? "#why" : `${site}denly_landing_page/#why`;
+const faqLink = isHome ? "#faq" : `${site}denly_landing_page/#faq`;
 ---
 
 <!-- ============================================ --><!--                 Navigation                   --><!-- ============================================ -->
@@ -46,6 +47,23 @@ const regLink = isHome ? "#register" : `${site}denly_landing_page/#register`;
             <a href={abtLink} class="cs-li-link"> About </a>
           </li>
 
+          <li class="cs-li">
+            <a href={ftLink} class="cs-li-link"> Features </a>
+          </li>
+          <li class="cs-li">
+            <a href={stepsLink} class="cs-li-link"> Process </a>
+          </li>
+          <li class="cs-li">
+            <a href={whyLink} class="cs-li-link"> Insights </a>
+          </li>
+          <li class="cs-li">
+            <a href={faqLink} class="cs-li-link"> FAQ </a>
+          </li>
+          <li class="cs-li">
+            <a href="/denly_landing_page/contact" class="cs-li-link">
+              Contact
+            </a>
+          </li>
           <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
           <li class="cs-li cs-dropdown" tabindex="0">
             <span class="cs-li-link">
@@ -133,14 +151,6 @@ const regLink = isHome ? "#register" : `${site}denly_landing_page/#register`;
                                 <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
                             </li> -->
             </ul>
-          </li>
-          <li class="cs-li">
-            <a href="" class="cs-li-link"> Blog </a>
-          </li>
-          <li class="cs-li">
-            <a href="/denly_landing_page/contact" class="cs-li-link">
-              Contact
-            </a>
           </li>
           <li class="md:hidden">
             <a
