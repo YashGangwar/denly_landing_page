@@ -3,4 +3,4 @@ title: Frequently Asked Questions
 type: faq
 ---
 
-Got questions? We have you covered.
+Have concerns? We've got you covered.

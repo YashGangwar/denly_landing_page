@@ -11,18 +11,18 @@ const site = Astro.site;
   <Navbar />
   <div class="flex flex-col justify-center pt-12 margin-top">
     <div
-      class="header-container self-center items-center flex flex-col w-full md:w-5/6 xl:w-4/5 px-4 sm:px-0"
+      class="header-container self-center items-center flex flex-col w-full md:w-5/6 xl:w-4/5 px-0 md:px-4"
     >
-      <div class="w-full text-center sm:text-left sm:w-1/2 py-12 sm:px-8">
+      <div class="w-full text-center sm:text-left sm:w-1/2 md:py-12 px-8">
         <h1 class="tracking-wide text-blue-500 text-6xl mb-6">
           <span
-            class="title-denly text-blue-900 font-bold tracking tracking-widest"
+            class="title-denly text-blue-900 font-lemon font-bold tracking tracking-widest"
             >Denly</span
           >
         </h1>
         <div class="sub-title">
           <span>
-            <h2 class="font-bold tracking-widest text-sm md:text-xl">
+            <h2 class="tracking-widest font-medium text-sm md:text-xl">
               Seeking the ideal
             </h2>
             <span
@@ -30,10 +30,12 @@ const site = Astro.site;
             >
               <section class="animation">
                 <div class="first">
-                  <div class="text-2xl md:text-4xl font-bold">Roommate?</div>
+                  <div class="text-2xl md:text-4xl font-semibold">
+                    Roommate?
+                  </div>
                 </div>
                 <div class="second text-xl">
-                  <div class="text-2xl md:text-4xl font-bold width-100">
+                  <div class="text-2xl md:text-4xl font-semibold width-100">
                     Flatmate?
                   </div>
                 </div>
@@ -41,32 +43,34 @@ const site = Astro.site;
             </span>
           </span>
           <span class="ml-5">
-            <h2 class="font-bold tracking-widest text-sm md:text-xl">
+            <h2 class="tracking-widest font-medium text-sm md:text-xl">
               Upgrade to
             </h2>
 
-            <p class="font-bold tracking-widest text-2xl md:text-4xl my-2 py-1">
+            <p
+              class="font-semibold tracking-widest text-2xl md:text-4xl my-2 py-1"
+            >
               Denmate.
             </p>
           </span>
         </div>
       </div>
-      <div class="w-4/5 md:w-3/5 lg:w-2/5">
+      <div class="w-4/5 md:w-3/5 lg:w-2/5 mb-16 md:mb-20">
         <img src={`${site}denly_landing_page/img/doodle.png`} alt="Roomies" />
       </div>
     </div>
     <div
-      class="flex-row w-full justify-center pb-4 absolute bottom cs-button hidden md:flex"
+      class="flex-row w-full justify-center mb-4 absolute bottom font-semibold cs-button hidden md:flex"
     >
       <a
-        class="px-10 py-2 text-gray-200 bg-blue-500 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red"
+        class="px-10 py-2 text-gray-200 bg-blue-500 rounded-full shadow-md absolute bottom text-lg hover:bg-gray-800 hover:border-red"
         href="#about"
       >
         More Information
       </a>
     </div>
     <div
-      class="flex-row w-full justify-center pb-4 absolute bottom cs-button flex md:hidden"
+      class="flex-row w-full justify-center mb-4 absolute bottom font-semibold cs-button flex md:hidden"
     >
       <a
         class="px-10 py-2 text-gray-900 bg-primary rounded-full shadow-md text-lg hover:bg-gray-800 hover:text-white hover:border-red"
@@ -188,7 +192,7 @@ const site = Astro.site;
     background-color: #20a7d8;
   }
   .second div {
-    background-color: #cd921e;
+    background-color: var(--primary);
   }
   .third div {
     background-color: #c10528;
