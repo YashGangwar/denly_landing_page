@@ -17,8 +17,7 @@ switch (env) {
     break
 
   case 'production':
-    build.baseURL = '/denly_landing_page/'
-    build.siteURL = 'https://yashgangwar.github.io'
+    build.siteURL = 'https://denly.co'
     break
 
   default:
