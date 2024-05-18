@@ -31,10 +31,10 @@ const { title, afterTitle } = Astro.props;
       id="click-left"
       class="md:mx-8 mx-4 md:w-1/2 h-full bg-white hover:shadow-lg hover:bg-primary-Light hover:bg-opacity-50 p-6 md:p-8 rounded-lg"
     >
-      <h3 class="text-blue-900 font-bold text-3xl mb-4">Only Denmate</h3>
+      <h3 class="text-blue-900 font-bold text-3xl mb-4">Denmate with a Den</h3>
       <p class="text-gray-600 text-lg">
-        Choose this option if you possess a room or flat and are in search of a
-        roommate or flatmate.
+        Choose this option if you seek a roommate or flatmate who has an
+        available room or flat.
       </p>
       <img
         src={`${site}img/den.png`}
@@ -43,47 +43,26 @@ const { title, afterTitle } = Astro.props;
     </div>
     <div
       id="cover-left"
-      class="hover-section h-1/2 md:h-full w-full md:w-1/2 top-0 md:top-px bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
+      class="hover-section h-full w-full md:w-1/2 top-0 md:top-px bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
     >
-      <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center text-gray-700">
-        Ready to go? Click the button to head over to our Google Form.<br />
-      </div>
-      <br />
-      <div class="w-full flex justify-center mt-4 md:mt-10">
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSefeYnUja0MYyFt0lE9VGngcL69jZTLArvZhb679EEPzEFkqA/viewform?usp=sharing"
-        >
-          <button
-            class="cs-button-solid bg-main-blue text-white hover:bg-white hover:text-black cs-submit"
-            type="submit">Bon voyage! 🚀✨</button
-          >
-        </a>
-      </div>
-    </div>
-
-    <div
-      id="click-right"
-      class="md:mx-8 mx-4 md:w-1/2 h-full bg-white hover:shadow-lg hover:bg-primary-Light hover:bg-opacity-50 p-6 md:p-8 rounded-lg md:mt-0 mt-8"
-    >
-      <h3 class="text-blue-900 font-bold text-3xl mb-4 text-right">
-        Denmate with a Den
-      </h3>
-      <p class="text-gray-600 text-lg text-right">
-        Choose this option if you seek a roommate or flatmate who has an
-        available room or flat.
-      </p>
-      <img
-        src={`${site}img/denmate.png`}
-        class="w-2/3 block sm:mx-auto hidden md:block"
-      />
-    </div>
-    <div
-      id="cover-right"
-      class="hover-section h-1/2 md:h-full w-full md:w-1/2 md:top-px -bottom-px md:bottom-0 bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
-    >
-      <div class="mx-4 md:mx-10 text-lg md:text-2xl text-center text-gray-700">
-        Below are the Facebook pages of the cities where Denly works its magic.
-        Pick the city where you are searching for a Denmate. 🗺️🔑
+      <div
+        class="mx-4 md:mx-10 text-lg md:text-2xl text-left text-gray-700 p-4"
+      >
+        <ul style="list-style-type:disc">
+          <li>Visit our city-specific Facebook pages.</li>
+          <li>
+            Find a potential compatible Denmate and fill out the form in their
+            post.
+          </li>
+          <li>
+            Wait a few days for them to reach out to you, which may happen only
+            if you appear in their top 3 matches.
+          </li>
+          <li>
+            No reply? No worries! Denly can keep matching you with other
+            potential denmates.
+          </li>
+        </ul>
       </div>
       <br />
       <div class="city-buttons flex flex-row mt-4 md:mt-10">
@@ -105,6 +84,51 @@ const { title, afterTitle } = Astro.props;
           <button
             class="cs-button-solid bg-main-blue text-white hover:bg-white hover:text-black cs-submit"
             type="submit">Pune</button
+          >
+        </a>
+      </div>
+    </div>
+
+    <div
+      id="click-right"
+      class="md:mx-8 mx-4 md:w-1/2 h-full bg-white hover:shadow-lg hover:bg-primary-Light hover:bg-opacity-50 p-6 md:p-8 rounded-lg md:mt-0 mt-8"
+    >
+      <h3 class="text-blue-900 font-bold text-3xl mb-4 text-right">
+        Only Denmate
+      </h3>
+      <p class="text-gray-600 text-lg text-right">
+        Choose this option if you possess a room or flat and are in search of a
+        roommate or flatmate.
+      </p>
+      <img
+        src={`${site}img/denmate.png`}
+        class="w-2/3 block sm:mx-auto hidden md:block"
+      />
+    </div>
+    <div
+      id="cover-right"
+      class="hover-section h-full w-full md:w-1/2 md:top-px -bottom-px md:bottom-0 bg-gray-300 text-gray-200 flex flex-col items-center justify-center close"
+    >
+      <div
+        class="mx-4 md:mx-10 text-lg md:text-2xl text-left text-gray-700 p-4"
+      >
+        <ul style="list-style-type:disc">
+          <li>
+            Ready to go? Click the button to head over to our Google Form.
+          </li>
+          <li>Submit the form, and we will WhatsApp you your top 3 matches.</li>
+          <li>Chat with them and share your feedback.</li>
+          <li>Not vibing? Let us know and we’ll keep searching!</li>
+        </ul>
+      </div>
+      <br />
+      <div class="w-full flex justify-center mt-4 md:mt-10">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSefeYnUja0MYyFt0lE9VGngcL69jZTLArvZhb679EEPzEFkqA/viewform?usp=sharing"
+        >
+          <button
+            class="cs-button-solid bg-main-blue text-white hover:bg-white hover:text-black cs-submit"
+            type="submit">Bon voyage! 🚀✨</button
           >
         </a>
       </div>

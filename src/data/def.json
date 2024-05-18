@@ -1,0 +1,14 @@
+[
+  {
+    "title": "'Denmate'",
+    "content": "Here at Denly, whether you’re looking for a flatmate or a roommate, we affectionately call them your ‘Denmate’.",
+    "icon": "dance",
+    "background": "denmate_doodle.png"
+  },
+  {
+    "title": "'Den'",
+    "content": "The house, room, or any shared space you have with your Denmate? We simply call it your ‘Den’.",
+    "icon": "house",
+    "background": "den_doodle.png"
+  }
+]

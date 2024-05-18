@@ -5,6 +5,7 @@ import Features from "./Features.astro";
 import Steps from "./Steps.astro";
 import WhyDenly from "./WhyDenly.astro";
 import FAQ from "./FAQ.astro";
+import Intro from "./Intro.astro";
 
 interface Props {
   afterTitle: string;
@@ -16,6 +17,14 @@ interface Props {
 const { afterTitle, sect, title, type } = Astro.props;
 const { Content } = await sect.render();
 ---
+
+{
+  type === "intro" && (
+    <Intro title={title}>
+      <Content />
+    </Intro>
+  )
+}
 
 {
   type === "about" && (
@@ -32,14 +41,14 @@ const { Content } = await sect.render();
     </Features>
   )
 }
-
+<!-- 
 {
   type === "steps" && (
     <Steps afterTitle={afterTitle} title={title}>
       <Content />
     </Steps>
   )
-}
+} -->
 
 {
   type === "why" && (

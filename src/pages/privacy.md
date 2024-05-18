@@ -3,7 +3,7 @@ layout: ../layouts/Page.astro
 title: Privacy Policy
 ---
 
-**Effective Date:** \_\_ April, 2024.
+**Effective Date:** 10 May, 2024.
 
 **Introduction:** Welcome to Denly, the roommate/flatmate matching
 service ("Service") operated by Denly ("we", "us", or "our"). We are
@@ -106,4 +106,4 @@ date.
 **Contact Us** If you have questions or comments about this policy, you
 may email us at feedback@denly.co.
 
-This policy is effective as of April \_\_\_, 2024.
+This policy is effective as of May 10, 2024.

@@ -8,161 +8,314 @@ const abtLink = isHome ? "#about" : `${site}#about`;
 const ftLink = isHome ? "#features" : `${site}#features`;
 ---
 
-<footer
-  class="w-full flex flex-col sm:flex-row sm:justify-center text-lg tracking-wide px-4 sm:px-0 py-16"
->
-  <div class="text-center pr-0 sm:pr-8 py-4">
-    <ul class="list-none">
-      {
-        siteData.social.map((scm) => (
-          <li>
-            <a
-              class="text-gray-800 hover:text-blue-500 no-underline"
-              href={scm.url}
-              target="_blank"
-              rel="_noopener"
-            >
-              {scm.title}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </div>
-  <div class="h-px sm:h-auto w-1/2 sm:w-px bg-blue-500 mx-auto sm:mx-0"></div>
-  <div class="text-center px-8 py-4">
-    <ul class="list-none">
-      <li>
-        <a class="text-gray-800 hover:text-blue-500 no-underline" href={abtLink}
-          >About</a
-        >
-      </li>
-      <li>
-        <a class="text-gray-800 hover:text-blue-500 no-underline" href={ftLink}
-          >Features</a
-        >
-      </li>
-    </ul>
-  </div>
-  <div class="h-px sm:h-auto w-1/2 sm:w-px bg-blue-500 mx-auto sm:mx-0"></div>
-  <div class="text-center pl-0 sm:pl-8 py-4">
-    <ul class="list-none">
-      <li>
-        <a
-          class="text-gray-800 hover:text-blue-500 no-underline"
-          href={`${site}privacy`}>Privacy</a
-        >
-      </li>
-      <li>
-        <a
-          class="text-gray-800 hover:text-blue-500 no-underline"
-          href={`${site}imprint`}>Imprint</a
-        >
-      </li>
-    </ul>
-  </div>
-</footer>
-<div class="w-full">
-  <span class="block text-center text-gray-800 text-sm font-light">
-    &copy; {siteData.author}
-  </span>
-</div>
-<div class="">
-  <a
-    id="btt"
-    class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-blue-500 hover:bg-gray-200 hover:text-blue-500 hover:border-browngray no-underline px-6 py-1 bg-blue-500 shadow-md"
-    href="#top"
-    title="Back to Top">UP</a
-  >
-</div>
-<!-- <div class="fixed bottom-0 left-0 m-6 z-index-2 social-floating">
-  <a
-    href="https://wa.me/+918810394795"
-    id="whatsapp"
-    target="_blank"
-    rel="noopener"
-    class="block rounded-full bg-gray-900 text-blue-500 hover:bg-white hover:text-black shadow-md p-4 my-4"
-  >
-    <img
-      src={`${site}img/whatsapp.svg`}
-      width="30"
-      height="30"
-      class="block"
-      alt="Whatsapp icon"
-    />
-  </a>
-  <a
-    id="facebook"
-    target="_blank"
-    rel="noopener"
-    class="block rounded-full bg-gray-900 text-blue-500 hover:bg-white hover:text-black shadow-md p-4 my-4"
-  >
-    <img
-      src={`${site}img/facebook.svg`}
-      width="30"
-      height="30"
-      class="block"
-      alt="Facebook icon"
-    />
-  </a>
-  <a
-    href="https://www.linkedin.com/company/denly/"
-    target="_blank"
-    rel="noopener"
-    class="block rounded-full bg-gray-900 text-blue-500 hover:bg-white hover:text-black shadow-md p-4 my-4"
-  >
-    <img
-      src={`${site}img/linkedin.svg`}
-      width="30"
-      height="30"
-      class="block"
-      alt="Linkedin icon"
-    />
-  </a>
-  <a
-    href="https://www.instagram.com/denly.co/"
-    target="_blank"
-    rel="noopener"
-    class="block rounded-full bg-gray-900 text-blue-500 hover:bg-white hover:text-black shadow-md p-4 my-4"
-  >
-    <img
-      src={`${site}img/instagram.svg`}
-      width="30"
-      height="30"
-      class="block"
-      alt="Linkedin icon"
-    />
-  </a>
-</div> -->
-
-<!-- "Follow" Tooltip template -->
-<!-- <template id="followTip">
-  {
-    siteData.facebook.map((scm) => (
+<!-- ============================================ --><!--                  Footer                      --><!-- ============================================ -->
+<footer id="footer-1147">
+  <div class="cs-container">
+    <div class="">
       <a
-        href={scm.url}
-        class="inline-block text-gray-200 text-sm bg-blue-500 shadow-md hover:bg-gray-200 hover:text-gray-800 no-underline p-1 px-4 mx-2 my-1"
-        target="_blank"
-        rel="noopener"
+        id="btt"
+        class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-blue-500 hover:bg-gray-200 hover:text-blue-500 hover:border-browngray no-underline px-6 py-1 bg-blue-500 shadow-md"
+        href="#top"
+        title="Back to Top">UP</a
       >
-        {scm.title}
+    </div>
+    <div class="cs-top">
+      <a aria-label="go back to home" class="cs-logo" href="#top">
+        <img
+          class="cs-logo-img"
+          loading="lazy"
+          decoding="async"
+          src={`${site}img/denly_main.png`}
+          alt="logo"
+          width="168"
+          height="48"
+        />
       </a>
-    ))
-  }
-</template> -->
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <a href="/flow" class="cs-link">Get started</a>
+        </li>
+        <li class="cs-li">
+          <a href={`${site}privacy`} class="cs-link">Privacy Policy</a>
+        </li>
+        <li class="cs-li">
+          <a href="/contact" class="cs-link">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="cs-bottom">
+      <!--Social-->
+      <ul class="cs-social">
+        <li class="cs-social-li">
+          <a
+            href="https://www.facebook.com/denly.co"
+            class="cs-social-link"
+            aria-label="facebook"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-social-icon cs-default"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-white.svg"
+              alt="icon"
+              loading="lazy"
+              decoding="async"
+              width="12"
+              height="12"
+              aria-hidden="true"
+            />
+          </a>
+        </li>
+        <li class="cs-social-li">
+          <a
+            href="https://wa.me/+918810394795"
+            class="cs-social-link"
+            aria-label="whatsapp"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-social-icon cs-default"
+              src={`${site}img/whatsapp.svg`}
+              alt="icon"
+              loading="lazy"
+              decoding="async"
+              width="12"
+              height="12"
+              aria-hidden="true"
+            />
+          </a>
+        </li>
+        <li class="cs-social-li">
+          <a
+            href="https://www.instagram.com/denly.co/"
+            class="cs-social-link"
+            aria-label="instagram"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-social-icon cs-default"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-transparent.svg"
+              alt="icon"
+              loading="lazy"
+              decoding="async"
+              width="12"
+              height="12"
+              aria-hidden="true"
+            />
+          </a>
+        </li>
+        <li class="cs-social-li">
+          <a
+            href="https://www.linkedin.com/company/denly/"
+            class="cs-social-link"
+            aria-label="linkedin"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-social-icon cs-default"
+              src={`${site}img/linkedin.svg`}
+              alt="icon"
+              loading="lazy"
+              decoding="async"
+              width="12"
+              height="12"
+              aria-hidden="true"
+            />
+          </a>
+        </li>
+      </ul>
+      <span class="cs-copyright">
+        © Copyright 2023 - <a href="" class="cs-copyright-link">Denly.co</a>
+      </span>
+    </div>
+  </div>
+  <!--Background-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset={`${site}img/chillhop.png`} />
+    <!--Tablet and above Image-->
+    <source media="(min-width: 601px)" srcset={`${site}img/chillhop.png`} />
+    <img
+      loading="lazy"
+      decoding="async"
+      srcset={`${site}img/chillhop.png`}
+      alt="kids"
+      width="1280"
+      height="568"
+    />
+  </picture>
+</footer>
 
-<!-- <style>
+<style>
+  /*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
   /* Mobile - 360px */
   @media only screen and (min-width: 0rem) {
-    .social-floating {
-      display: none;
+    #footer-1147 {
+      padding: var(--sectionPadding);
+      position: relative;
+      z-index: 1;
+    }
+    #footer-1147 .cs-container {
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #footer-1147 .cs-top {
+      width: 100%;
+      /* 32px - 40px */
+      margin-bottom: clamp(2rem, 4vw, 2.5rem);
+      padding-bottom: clamp(2rem, 4vw, 2.5rem);
+      border-bottom: 1px solid #828282;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    #footer-1147 .cs-ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      row-gap: 0.5rem;
+      /* 28px - 40px */
+      column-gap: clamp(1.75rem, 4vw, 2.5rem);
+    }
+    #footer-1147 .cs-li {
+      list-style: none;
+    }
+    #footer-1147 .cs-link {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      text-decoration: none;
+      margin: 0;
+      color: #b7b7b7;
+      display: block;
+      transition: color 0.3s;
+    }
+    #footer-1147 .cs-link:hover {
+      color: var(--secondary);
+    }
+    #footer-1147 .cs-logo {
+      width: 10.5rem;
+      height: auto;
+      display: block;
+    }
+    #footer-1147 .cs-logo-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    #footer-1147 .cs-bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    #footer-1147 .cs-social {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    #footer-1147 .cs-social-li {
+      list-style: none;
+    }
+    #footer-1147 .cs-social-link {
+      width: 2rem;
+      height: 2rem;
+      background-color: #0b0b0b;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s;
+    }
+    #footer-1147 .cs-social-link:hover {
+      background-color: var(--secondary);
+    }
+    #footer-1147 .cs-social-link:hover .cs-social-icon {
+      filter: grayscale(1) brightness(0);
+      opacity: 1;
+    }
+    #footer-1147 .cs-social-icon {
+      width: 0.75rem;
+      height: auto;
+      display: block;
+      opacity: 0.5;
+    }
+    #footer-1147 .cs-copyright {
+      font-size: 1rem;
+      line-height: 1.5em;
+      margin: 0;
+      color: #999999;
+      display: block;
+    }
+    #footer-1147 .cs-copyright-link {
+      font-size: inherit;
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s;
+    }
+    #footer-1147 .cs-copyright-link:hover {
+      color: var(--secondary);
+    }
+    #footer-1147 .cs-background {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    #footer-1147 .cs-background:before {
+      /* background color overlay */
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: #324350;
+      opacity: 0.9;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    #footer-1147 .cs-background img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      /* Makes img tag act as a background image */
+      object-fit: cover;
     }
   }
-
   /* Tablet - 768px */
   @media only screen and (min-width: 48rem) {
-    .social-floating {
-      display: none;
+    #footer-1147 .cs-top {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #footer-1147 .cs-bottom {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
-</style> -->
+</style>

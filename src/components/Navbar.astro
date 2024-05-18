@@ -5,9 +5,9 @@ const pn = Astro.url.pathname;
 const isHome = pn === "/";
 const site = Astro.site;
 const homeLink = isHome ? "#home" : `${site}#home`;
+const introLink = isHome ? "#info" : `${site}#info`;
 const abtLink = isHome ? "#about" : `${site}#about`;
 const ftLink = isHome ? "#features" : `${site}#features`;
-const stepsLink = isHome ? "#steps" : `${site}#steps`;
 const whyLink = isHome ? "#why" : `${site}#why`;
 const faqLink = isHome ? "#faq" : `${site}#faq`;
 ---
@@ -44,14 +44,14 @@ const faqLink = isHome ? "#faq" : `${site}#faq`;
             <a href={homeLink} class="cs-li-link"> Home </a>
           </li>
           <li class="cs-li">
-            <a href={abtLink} class="cs-li-link"> About </a>
+            <a href={introLink} class="cs-li-link"> About </a>
+          </li>
+          <li class="cs-li">
+            <a href={abtLink} class="cs-li-link"> Basics </a>
           </li>
 
           <li class="cs-li">
             <a href={ftLink} class="cs-li-link"> Features </a>
-          </li>
-          <li class="cs-li">
-            <a href={stepsLink} class="cs-li-link"> Process </a>
           </li>
           <li class="cs-li">
             <a href={whyLink} class="cs-li-link"> Insights </a>
@@ -102,7 +102,7 @@ const faqLink = isHome ? "#faq" : `${site}#faq`;
                   <div class="cs-social-link mr-4">
                     <img
                       class="cs-social-icon"
-                      src={`${site}img/facebook.svg`}
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-white.svg"
                       alt="logo"
                       aria-hidden="true"
                       decoding="async"
@@ -136,7 +136,7 @@ const faqLink = isHome ? "#faq" : `${site}#faq`;
                   <div class="cs-social-link mr-4">
                     <img
                       class="cs-social-icon"
-                      src={`${site}img/instagram.svg`}
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-transparent.svg"
                       alt="logo"
                       aria-hidden="true"
                       decoding="async"
@@ -267,7 +267,8 @@ const faqLink = isHome ? "#faq" : `${site}#faq`;
         text-decoration: none;
         width: 2rem;
         height: 2rem;
-        background-color: #f7f7f7;
+        padding: 2px;
+        background-color: var(--mainBlue);
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -798,7 +799,7 @@ const faqLink = isHome ? "#faq" : `${site}#faq`;
         text-decoration: none;
         width: 2rem;
         height: 2rem;
-        background-color: #f7f7f7;
+        background-color: var(--mainBlue);
         border-radius: 50%;
         display: flex;
         justify-content: center;

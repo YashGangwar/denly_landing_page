@@ -1,22 +1,17 @@
 [
   {
-    "title": "The Origin Story",
-    "content": "Founded by two professionals who’ve been in the housemate roulette themselves, we understand that the right match can turn the house…into a home. Denly was born out of this idea.",
-    "icon": "home"
-  },
-  {
     "title": "Simplifying the Search",
-    "content": "At Denly, we're dedicated to making the search for your next flatmate or roommate as satisfying as a well-organized drawer. Our mission: revolutionizing housemate matching with a sprinkle of humor and fun.",
+    "content": "At Denly, we're dedicated to making the search for your next flatmate or roommate as satisfying as a well-organized drawer. ",
     "icon": "stack"
   },
   {
     "title": "Smart Matching Process",
-    "content": "Our smart matching process considers not just practical aspects, but also shared interests and lifestyle preferences. Whether it's quirky mugs and silent discos or quiet evenings and shared grocery lists, we'll find your ideal match.",
+    "content": "Whether it's quirky mugs and silent discos or quiet evenings and shared grocery lists, we'll find your ideal match.",
     "icon": "hourglass"
   },
   {
     "title": "Discover the Joy of Co-living",
-    "content": "Whether you're a social butterfly looking for a roommate to share adventures with or a homebody seeking a quiet and cozy space, we're here to help you find your perfect match. Discover the joy of co-living made simple, with Denly.",
+    "content": "Whether you're a social butterfly looking for a roommate to share adventures with or a homebody seeking a quiet and cozy space, we're here to help you find your perfect match.",
     "icon": "flower"
   }
 ]

@@ -11,13 +11,13 @@ const site = Astro.site;
   <Navbar />
   <div class="flex flex-col justify-center pt-12 margin-top">
     <div
-      class="header-container self-center items-center flex flex-col w-full md:w-5/6 xl:w-4/5 px-0 md:px-4"
+      class="header-container self-center items-center flex flex-col w-full md:w-5/6 xl:w-4/5 px-0 md:px-4 md:justify-between xl:justify-around"
     >
-      <div class="w-full text-center sm:text-left sm:w-1/2 md:py-12 px-8">
+      <div class="w-full text-center sm:text-left sm:w-1/2 lg:px-8">
         <h1 class="tracking-wide text-blue-500 text-6xl mb-6">
           <span
-            class="title-denly text-blue-900 font-lemon font-bold tracking tracking-widest"
-            >Denly</span
+            class="title-denly text-blue-900 font-quick font-light tracking tracking-widest"
+            >denly</span
           >
         </h1>
         <div class="sub-title">
@@ -55,7 +55,7 @@ const site = Astro.site;
           </span>
         </div>
       </div>
-      <div class="w-4/5 md:w-3/5 lg:w-2/5 mb-16 md:mb-20">
+      <div class="w-4/5 md:w-3/5 lg:w-2/5">
         <img src={`${site}img/doodle.png`} alt="Roomies" />
       </div>
     </div>
@@ -64,7 +64,7 @@ const site = Astro.site;
     >
       <a
         class="px-10 py-2 text-gray-200 bg-blue-500 rounded-full shadow-md absolute bottom text-lg hover:bg-gray-800 hover:border-red"
-        href="#about"
+        href="#info"
       >
         More Information
       </a>
@@ -100,6 +100,8 @@ const site = Astro.site;
       width: 100%;
       display: inline-block;
       text-align: center;
+      font-size: 5.5rem;
+      letter-spacing: 3px;
     }
     .sub-title {
       display: flex;
