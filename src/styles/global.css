@@ -255,6 +255,11 @@ html {
   background-color: #d0eeff;
 }
 
+.bg-darkblue-pastel {
+  background-image: url(/img/backgroundDoodle.png);
+  box-shadow: inset 0 0 0 1000px rgba(59, 87, 118, 0.99);
+}
+
 .bg-tertiary-light {
   background-color: var(--tertiaryLight);
 }
