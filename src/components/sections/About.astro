@@ -21,13 +21,13 @@ const { title } = Astro.props;
     <ul class="cs-card-group">
       {
         def.map((story) => (
-          <li class="cs-item shadow-xl relative">
-            <picture class="cs-icon-wrapper absolute top">
+          <li class="cs-item rounded-xl shadow-xl relative">
+            <picture class="cs-icon-wrapper rounded-lg absolute top">
               <Icon name={story.icon} size={60} />
             </picture>
             <h3 class="cs-h3">{story.title}</h3>
             <p class="cs-item-text">{story.content}</p>
-            <picture class="cs-background">
+            <picture class="cs-background rounded-xl">
               <img
                 loading="lazy"
                 decoding="async"
@@ -48,7 +48,7 @@ const { title } = Astro.props;
     class="flex flex-row w-full justify-center pb-4 absolute bottom cs-button"
   >
     <a
-      class="px-10 py-2 text-gray-200 bg-blue-500 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red"
+      class="px-10 py-2 text-gray-200 bg-blue-500 rounded-full shadow-md text-lg hover:bg-gray-800"
       href="#features"
     >
       How We Match
@@ -125,16 +125,7 @@ const { title } = Astro.props;
       z-index: 1;
       min-height: 20rem;
     }
-    #about .cs-item:hover .cs-h3 {
-      color: var(--primaryLight);
-    }
-    #about .cs-item:hover .cs-item-text {
-      color: var(--primaryLight);
-      opacity: 0.9;
-    }
-    #about .cs-item:hover .cs-background {
-      opacity: 1;
-    }
+
     #about .cs-icon-wrapper {
       width: 5.5rem;
       height: 5.5rem;
@@ -165,38 +156,13 @@ const { title } = Astro.props;
       padding: 0;
       color: var(--bodyTextColor);
     }
-    #about .cs-link {
-      text-decoration: none;
-      font-size: 0.8rem;
-      line-height: 1.2em;
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
-      color: var(--primary);
-      position: relative;
-      transition: color 0.3s;
-    }
-    #about .cs-link:hover {
-      color: #fff;
-    }
-    #about .cs-link:before {
-      /* underline */
-      content: "";
-      width: 100%;
-      height: 1px;
-      background: currentColor;
-      opacity: 1;
-      position: absolute;
-      display: block;
-      bottom: 0rem;
-      left: 0;
-    }
+
     #about .cs-background {
       width: 100%;
       height: 100%;
-      opacity: 0;
       display: block;
       position: absolute;
+      overflow: hidden;
       top: 0;
       left: 0;
       z-index: -1;
@@ -209,8 +175,8 @@ const { title } = Astro.props;
       display: block;
       height: 100%;
       width: 100%;
-      background: #1a1a1a;
-      opacity: 0.9;
+      background: #f2f2f2;
+      opacity: 0.96;
       top: 0;
       left: 0;
       z-index: 1;
