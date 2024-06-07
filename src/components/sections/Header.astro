@@ -13,13 +13,17 @@ const site = Astro.site;
     <div
       class="header-container self-center items-center flex flex-col w-full md:w-5/6 xl:w-4/5 px-0 md:px-4 md:justify-between xl:justify-around"
     >
-      <div class="w-full text-center sm:text-left sm:w-1/2 lg:px-8">
-        <h1 class="tracking-wide text-blue-500 text-6xl mb-6">
-          <span
-            class="title-denly text-blue-900 font-quick font-light tracking tracking-widest"
-            >denly</span
-          >
-        </h1>
+      <div
+        class="w-full flex flex-col items-center lg:items-start sm:text-left sm:w-1/2 lg:px-8"
+      >
+        <img
+          class="cs-logo-img mb-5"
+          loading="lazy"
+          decoding="async"
+          src={`${site}img/denly_main_blue.png`}
+          alt="logo"
+          width="250"
+        />
         <div class="sub-title">
           <span>
             <h2 class="tracking-widest font-medium text-sm md:text-xl">
